@@ -17,7 +17,7 @@
     <string name="full_name">Full Name</string>
     <string name="sign_in">Sign In</string>
     <string name="login_image_background">Login Image Background</string>
-    <string name="phulbari">Phulbari</string>
+    <string name="phulbari"><u>Phulbari</u></string>
     <string name="happy_flowers_happy_you">Happy Flowers, Happy You</string>
     <string name="register_image_background">Register Image Background</string>
     <string name="already_have_an_account">Already have an account?</string>
@@ -42,4 +42,11 @@
     <string name="soil_moisture_level_data">Soil Moisture Level Data</string>
     <string name="watering_plant">Watering Plant</string>
     <string name="plant_watering_status">Plant Watering Status</string>
+    <string name="buy_flowers">Buy Flowers</string>
+    <string name="moisture_level">Moisture Level</string>
+    <string name="my_flowers">My Flowers</string>
+    <string name="my_flowers_u"><u>My Flowers</u></string>
+    <string name="detect_disease">Detect Disease</string>
+    <string name="ninety">90%</string>
+    <string name="all_flowers">All Flowers</string>
 </resources>

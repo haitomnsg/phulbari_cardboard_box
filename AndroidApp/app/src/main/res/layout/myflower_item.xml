@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink"
+        android:padding="16dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/flower_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flower Name"
+            android:textColor="@color/darkPink"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/water_requirement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water Requirement: Moderate"
+            android:textColor="@color/darkPink"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/sunlight_requirement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunlight Requirement: Full"
+            android:textColor="@color/darkPink"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

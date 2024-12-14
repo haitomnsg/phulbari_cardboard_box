@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiseaseDetailedActivity">
+
+    <ImageView
+        android:id="@+id/disease_image"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/early_blight" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/rounded_top_rectangle" />
+
+    <TextView
+        android:id="@+id/disease_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Disease Name"
+        android:textColor="@color/darkPink"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/reason_image"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/disease_image"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/reason_image"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/disease_image"
+        app:srcCompat="@drawable/rounded_side_rectangle" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/reason_image"
+        app:layout_constraintEnd_toStartOf="@+id/reason_text"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toStartOf="@+id/reason_image"
+        app:layout_constraintTop_toTopOf="@+id/reason_image"
+        app:layout_constraintVertical_bias="0.58"
+        app:srcCompat="@drawable/cause" />
+
+    <TextView
+        android:id="@+id/reason_text"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/darkPink"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/reason_image"
+        app:layout_constraintEnd_toEndOf="@+id/reason_image"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="@+id/reason_image"
+        app:layout_constraintTop_toTopOf="@+id/reason_image"
+        app:layout_constraintVertical_bias="0.375"
+        tools:text="Reason Of Disease" />
+
+    <ImageView
+        android:id="@+id/cure_image"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/reason_image"
+        app:srcCompat="@drawable/rounded_side_rectangle" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cure_image"
+        app:layout_constraintEnd_toStartOf="@+id/cure_text"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="@+id/cure_image"
+        app:layout_constraintTop_toTopOf="@+id/cure_image"
+        app:layout_constraintVertical_bias="0.58"
+        app:srcCompat="@drawable/cure" />
+
+    <TextView
+        android:id="@+id/cure_text"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/darkPink"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cure_image"
+        app:layout_constraintEnd_toEndOf="@+id/cure_image"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="@+id/cure_image"
+        app:layout_constraintTop_toTopOf="@+id/cure_image"
+        app:layout_constraintVertical_bias="0.375"
+        tools:text="Cure of Disease" />
+
+    <ImageView
+        android:id="@+id/prevention_image"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/cure_image"
+        app:srcCompat="@drawable/rounded_side_rectangle" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/prevention_image"
+        app:layout_constraintEnd_toStartOf="@+id/prevention_text"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="@+id/prevention_image"
+        app:layout_constraintTop_toTopOf="@+id/prevention_image"
+        app:layout_constraintVertical_bias="0.62"
+        app:srcCompat="@drawable/prevent" />
+
+    <TextView
+        android:id="@+id/prevention_text"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/darkPink"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/prevention_image"
+        app:layout_constraintEnd_toEndOf="@+id/prevention_image"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="@+id/prevention_image"
+        app:layout_constraintTop_toTopOf="@+id/prevention_image"
+        app:layout_constraintVertical_bias="0.65"
+        tools:text="Prevention of Disease" />
+
+    <Button
+        android:id="@+id/video_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/darkPink"
+        android:text="Video Tutorial"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prevention_image" />
+</androidx.constraintlayout.widget.ConstraintLayout>
